@@ -1,0 +1,954 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+
+		<meta charset="UTF-8">
+		<meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=0'>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta http-equiv="X-UA-Compatible" content="IE=9" />
+		<meta name="Description" content="Bootstrap Responsive Admin Web Dashboard HTML5 Template">
+		<meta name="Author" content="Spruko Technologies Private Limited">
+		<meta name="Keywords" content="admin,admin dashboard,admin dashboard template,admin panel template,admin template,admin theme,bootstrap 4 admin template,bootstrap 4 dashboard,bootstrap admin,bootstrap admin dashboard,bootstrap admin panel,bootstrap admin template,bootstrap admin theme,bootstrap dashboard,bootstrap form template,bootstrap panel,bootstrap ui kit,dashboard bootstrap 4,dashboard design,dashboard html,dashboard template,dashboard ui kit,envato templates,flat ui,html,html and css templates,html dashboard template,html5,jquery html,premium,premium quality,sidebar bootstrap 4,template admin bootstrap 4"/>
+
+		<!-- Title -->
+		<title> ARBIM CONSTRUCCIÓN </title>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		 <script src="//cdnjs.cloudflare.com/ajax/libs/jstree/3.3.7/jstree.min.js"></script>
+		 <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/jstree/3.3.7/themes/default/style.min.css" />
+
+ 		<link rel="stylesheet" href="https://developer.api.autodesk.com/modelderivative/v2/viewers/7.*/style.min.css" type="text/css">
+  		<script src="https://developer.api.autodesk.com/modelderivative/v2/viewers/7.*/viewer3D.min.js"></script>
+  	    <link rel="stylesheet" href="css/frappe-gantt.css">
+
+  	    <script src="js/Dashboard/Dashboard.js"></script>
+		<script src="js/Dashboard/DashboardPanel.js"></script>
+	    <script src="js/Dashboard/PanelBarChart.js"></script>
+	    <script src="js/Dashboard/PanelPieChart.js"></script>
+	    <script src="js/Dashboard/PanelGanttChart.js"></script>
+
+
+
+
+		<!-- Favicon -->
+		<link rel="icon" href="assets/img/brand/logo.png" type="image/x-icon"/>
+
+		<!-- Icons css -->
+		<link href="assets/css/icons.css" rel="stylesheet">
+
+		<!--  Owl-carousel css-->
+		<link href="assets/plugins/owl-carousel/owl.carousel.css" rel="stylesheet" />
+
+		<!-- P-scroll bar css-->
+		<link href="assets/plugins/perfect-scrollbar/p-scrollbar.css" rel="stylesheet" />
+
+		<!--  Right-sidemenu css -->
+		<link href="assets/plugins/sidebar/sidebar.css" rel="stylesheet">
+
+		<!-- Sidemenu css -->
+		<link rel="stylesheet" href="assets/css/sidemenu.css">
+
+		<!-- Maps css -->
+		<link href="assets/plugins/jqvmap/jqvmap.min.css" rel="stylesheet">
+
+		<!-- style css -->
+		<link href="assets/css/style.css" rel="stylesheet">
+		<link href="assets/css/style-dark.css" rel="stylesheet">
+
+		<!---Skinmodes css-->
+		<link href="assets/css/skin-modes.css" rel="stylesheet" />
+
+	</head>
+
+	<body class="main-body app sidebar-mini">
+
+		<!-- Loader -->
+		<div id="global-loader">
+			<img src="assets/img/loader.svg" class="loader-img" alt="Loader">
+		</div>
+		<!-- /Loader -->
+
+		<!-- Page -->
+		<div class="page">
+
+			<!-- main-sidebar -->
+			<div class="app-sidebar__overlay" data-toggle="sidebar"></div>
+			<aside class="app-sidebar sidebar-scroll">
+				<div class="main-sidebar-header active">
+					<a class="desktop-logo logo-light active" href="index.html"><img src="assets/img/brand/logo.png" class="main-logo" alt="logo"></a>
+					<a class="desktop-logo logo-dark active" href="index.html"><img src="assets/img/brand/logo.png" class="main-logo dark-theme" alt="logo"></a>
+					<a class="logo-icon mobile-logo icon-light active" href="index.html"><img src="assets/img/brand/logo.png" class="logo-icon" alt="logo"></a>
+					<a class="logo-icon mobile-logo icon-dark active" href="index.html"><img src="assets/img/brand/logo.png" class="logo-icon dark-theme" alt="logo"></a>
+			
+				</div>
+			<div class="main-sidemenu">
+					
+					
+				<ul class="side-menu">
+					<li class="side-item side-item-category">Menú Principal</li>
+					
+					<li class="slide">
+						<a class="side-menu__item"  href="index.html"><svg xmlns="http://www.w3.org/2000/svg" class="side-menu__icon" viewBox="0 0 24 24" ><path d="M0 0h24v24H0V0z" fill="none"/><path d="M5 5h4v6H5zm10 8h4v6h-4zM5 17h4v2H5zM15 5h4v2h-4z" opacity=".3"/><path d="M3 13h8V3H3v10zm2-8h4v6H5V5zm8 16h8V11h-8v10zm2-8h4v6h-4v-6zM13 3v6h8V3h-8zm6 4h-4V5h4v2zM3 21h8v-6H3v6zm2-4h4v2H5v-2z"/></svg><span class="side-menu__label">Home ARBIM FM</span></a>
+					</li>
+					
+					<li class="side-item side-item-category">Administración</li>
+					
+					
+				
+					<li class="slide">
+						<a class="side-menu__item" data-toggle="slide" href="selector.html"><svg xmlns="http://www.w3.org/2000/svg" class="side-menu__icon" viewBox="0 0 24 24"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M6.26 9L12 13.47 17.74 9 12 4.53z" opacity=".3"/><path d="M19.37 12.8l-7.38 5.74-7.37-5.73L3 14.07l9 7 9-7zM12 2L3 9l1.63 1.27L12 16l7.36-5.73L21 9l-9-7zm0 11.47L6.26 9 12 4.53 17.74 9 12 13.47z"/></svg><span class="side-menu__label">BIM</span></a>
+					</li>
+					<li class="slide">
+						<a class="side-menu__item" data-toggle="slide" href="tareas.html"><svg xmlns="http://www.w3.org/2000/svg" class="side-menu__icon" viewBox="0 0 24 24"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M6.26 9L12 13.47 17.74 9 12 4.53z" opacity=".3"/><path d="M19.37 12.8l-7.38 5.74-7.37-5.73L3 14.07l9 7 9-7zM12 2L3 9l1.63 1.27L12 16l7.36-5.73L21 9l-9-7zm0 11.47L6.26 9 12 4.53 17.74 9 12 13.47z"/></svg><span class="side-menu__label">Tareas</span></a>
+					</li>
+					<li class="slide">
+						<a class="side-menu__item" data-toggle="slide" href="roles.html"><svg xmlns="http://www.w3.org/2000/svg" class="side-menu__icon" viewBox="0 0 24 24"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M6.26 9L12 13.47 17.74 9 12 4.53z" opacity=".3"/><path d="M19.37 12.8l-7.38 5.74-7.37-5.73L3 14.07l9 7 9-7zM12 2L3 9l1.63 1.27L12 16l7.36-5.73L21 9l-9-7zm0 11.47L6.26 9 12 4.53 17.74 9 12 13.47z"/></svg><span class="side-menu__label">Roles</span></a>
+					</li>
+					<!--
+					<li class="slide">
+						<a class="side-menu__item" data-toggle="slide" href="calendario.html"><svg xmlns="http://www.w3.org/2000/svg" class="side-menu__icon" viewBox="0 0 24 24"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M6.26 9L12 13.47 17.74 9 12 4.53z" opacity=".3"/><path d="M19.37 12.8l-7.38 5.74-7.37-5.73L3 14.07l9 7 9-7zM12 2L3 9l1.63 1.27L12 16l7.36-5.73L21 9l-9-7zm0 11.47L6.26 9 12 4.53 17.74 9 12 13.47z"/></svg><span class="side-menu__label">Calendario</span></a>
+					</li>-->
+					
+					
+					<li class="slide">
+						<a class="side-menu__item" data-toggle="slide" href="#"><svg xmlns="http://www.w3.org/2000/svg" class="side-menu__icon" viewBox="0 0 24 24"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M19 5H5v14h14V5zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z" opacity=".3"/><path d="M3 5v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2zm2 0h14v14H5V5zm2 5h2v7H7zm4-3h2v10h-2zm4 6h2v4h-2z"/></svg><span class="side-menu__label">Estadisticas</span><i class="angle fe fe-chevron-down"></i></a>
+						<ul class="slide-menu">
+							<li><a class="slide-item" href="estadisticas_general.html">Resumen General</a></li>
+							<li><a class="slide-item" href="estadistica_tarea.html">Detalle</a></li>
+		
+						</ul>
+					</li>
+				</ul>
+				</div>
+			</aside>
+			<!-- main-sidebar -->
+
+			<!-- main-content -->
+			<div class="main-content app-content">
+
+				<!-- main-header -->
+				<div class="main-header sticky side-header nav nav-item">
+					<div class="container-fluid">
+						<div class="main-header-left ">
+							<div class="responsive-logo">
+								<a href="index.html"><img src="assets/img/brand/logo.png" class="logo-1" alt="logo"></a>
+								<a href="index.html"><img src="assets/img/brand/logo-white.png" class="dark-logo-1" alt="logo"></a>
+								<a href="index.html"><img src="assets/img/brand/favicon.png" class="logo-2" alt="logo"></a>
+								<a href="index.html"><img src="assets/img/brand/favicon.png" class="dark-logo-2" alt="logo"></a>
+							</div>
+							<div class="app-sidebar__toggle" data-toggle="sidebar">
+								<a class="open-toggle" href="#"><i class="header-icon fe fe-align-left" ></i></a>
+								<a class="close-toggle" href="#"><i class="header-icons fe fe-x"></i></a>
+							</div>
+						
+						</div>
+						<div class="main-header-right">
+							
+							<div class="nav nav-item  navbar-nav-right ml-auto">
+								<div class="nav-link" id="bs-example-navbar-collapse-1">
+									<form class="navbar-form" role="search">
+										<div class="input-group">
+											<input type="text" class="form-control" placeholder="Search">
+											<span class="input-group-btn">
+												<button type="reset" class="btn btn-default">
+													<i class="fas fa-times"></i>
+												</button>
+												<button type="submit" class="btn btn-default nav-link resp-btn">
+													<svg xmlns="http://www.w3.org/2000/svg" class="header-icon-svgs" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+												</button>
+											</span>
+										</div>
+									</form>
+								</div>
+								
+								<div class="dropdown nav-item main-header-notification">
+									<a class="new nav-link" href="#">
+									<svg xmlns="http://www.w3.org/2000/svg" class="header-icon-svgs" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-bell"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path><path d="M13.73 21a2 2 0 0 1-3.46 0"></path></svg><span class=" pulse"></span></a>
+									<div class="dropdown-menu">
+										<div class="menu-header-content bg-primary text-left">
+											<div class="d-flex">
+												<h6 class="dropdown-title mb-1 tx-15 text-white font-weight-semibold">Notificiaciones</h6>
+												
+											</div>
+											
+										</div>
+										<div class="main-notification-list Notification-scroll">
+											<a class="d-flex p-3 border-bottom" href="#">
+												<div class="notifyimg bg-pink">
+													<i class="la la-file-alt text-white"></i>
+												</div>
+												<div class="ml-3">
+													<h5 class="notification-label mb-1">Notificación</h5>
+													<div class="notification-subtext">tiempo transcurrido</div>
+												</div>
+												<div class="ml-auto" >
+													<i class="las la-angle-right text-right text-muted"></i>
+												</div>
+											</a>
+											<a class="d-flex p-3" href="#">
+												<div class="notifyimg bg-purple">
+												<i class="la la-file-alt text-white"></i>
+												</div>
+												<div class="ml-3">
+													<h5 class="notification-label mb-1">Notificación</h5>
+													<div class="notification-subtext">tiempo transcurrido</div>
+												</div>
+												<div class="ml-auto" >
+													<i class="las la-angle-right text-right text-muted"></i>
+												</div>
+											</a>
+											<a class="d-flex p-3 border-bottom" href="#">
+												<div class="notifyimg bg-success">
+												<i class="la la-file-alt text-white"></i>
+												</div>
+												<div class="ml-3">
+													<h5 class="notification-label mb-1">Notificación</h5>
+													<div class="notification-subtext">tiempo transcurrido</div>
+												</div>
+												<div class="ml-auto" >
+													<i class="las la-angle-right text-right text-muted"></i>
+												</div>
+											</a>
+											
+										</div>
+										<div class="dropdown-footer">
+											<a href="">Ver Todo</a>
+										</div>
+									</div>
+								</div>
+								<div class="nav-item full-screen fullscreen-button">
+									<a class="new nav-link full-screen-link" href="#"><svg xmlns="http://www.w3.org/2000/svg" class="header-icon-svgs" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-maximize"><path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"></path></svg></a>
+								</div>
+								<div class="dropdown main-profile-menu nav nav-item nav-link">
+									<a class="profile-user d-flex" href="">
+										<div class="avatar avatar-md bg-warning rounded-circle" >
+															NU
+												</div>
+									</a>
+									<div class="dropdown-menu">
+										<div class="main-header-profile bg-primary p-3">
+											<div class="d-flex wd-100p">
+												<div class="avatar avatar-md bg-warning rounded-circle" >
+															NU
+												</div>
+												<div class="ml-3 my-auto">
+													<h6>Nombre Usuario</h6><span>Empresa</span>
+												</div>
+											</div>
+										</div>
+										
+										<a class="dropdown-item" href="profile.html"><i class="bx bx-slider-alt"></i> Cuenta</a>
+										<a class="dropdown-item" href="page-signin.html"><i class="bx bx-log-out"></i> Salir</a>
+									</div>
+								</div>
+								<div class="dropdown main-header-message right-toggle">
+									<a class="nav-link pr-0" data-toggle="sidebar-right" data-target=".sidebar-right">
+										<svg xmlns="http://www.w3.org/2000/svg" class="header-icon-svgs" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- /main-header -->
+
+				<!-- container -->
+				<div class="container-fluid">
+
+					<!-- breadcrumb -->
+					
+					<!-- /breadcrumb -->
+
+		
+
+					<!-- row opened -->
+				
+ 				<div class="row row-sm">
+ 					<div class="col-md-12 col-lg-12 col-lg-12">
+ 						<div class="card card-dashboard-map-one">
+							<div class="tabs-menu ">
+
+								<!-- Tabs -->
+								<ul class="nav nav-tabs profile navtab-custom panel-tabs">
+									<li class="active">
+										<a href="#usuariorol" data-toggle="tab" aria-expanded="true"> <span class="visible-xs"><i class="las la-cog tx-16 mr-1"></i></span> <span class="hidden-xs">Usuarios Rol</span> </a>
+									</li>
+									<li class="">
+										<a href="#roles" data-toggle="tab" aria-expanded="false"> <span class="visible-xs"><i class="fa fa-align-right"></i></span> <span class="hidden-xs">Roles del Sistema </span> </a>
+									</li>
+									
+									
+								</ul>
+							</div>
+
+							<div class="tab-content">
+
+								<div class="tab-pane active" id="usuariorol">
+									<form role ="form" >
+										<div class="form-group">
+											<label for="date_form" >NOMBRE</label>
+											<input type="text" id="nombre_rol" class="form-control">
+											<label for="date_form">Apellido</label>
+											<input type="text" id="apellido_rol" class="form-control">
+                                            <label for="date_form">E-Mail</label>
+											<input type="email" id="e_mail_rol" class="form-control">
+                                            <label for="date_form">Telefono</label>
+											<input type="text" id="telefono_rol" class="form-control">
+											<label for="rol_form">ROL</label>
+											<select name="ROL" id="rol_rol" class="form-control">
+												
+											</select>
+										</div> 
+
+										<button class="btn btn-primary waves-effect waves-light w-md" onclick="addUsuarioRol();">CREAR</button>
+									</form>
+                                    <p></p><p></p>
+                                    <div class="card card-dashboard-map-one">
+                                        <label class="main-content-label">Usuarios Rol</label>
+                                      
+                                        <div class="">
+                                                     <div >
+                                                            <div class="container-fluid fill">
+                                                              <div class="row fill">
+                                                                <div class="col-sm-12 fill">
+                                                                  <div class="panel panel-default fill">
+                                                                    <div class="panel-heading" data-toggle="tooltip">
+                                                                     Usuarios Rol
+                                                                      <span id="refreshBuckets" class="glyphicon glyphicon-refresh" style="cursor: pointer"></span>
+                                                                      <div class="card-body">
+                                                                         <div class="table-responsive">
+                                                                             <table class="table mg-b-0 text-md-nowrap" id="usuario_rol">
+                                                                                 <thead>
+                                                                                     <tr>
+                                                                                         <th>Nombre</th>
+                                                                                         <th>Apellido</th>
+                                                                                         <th>E-email</th>
+                                                                                         <th>Telefono</th>
+                                                                                         <th>Rol</th>
+                                                                                         <th>Acción</th>
+                                                                                     </tr>
+                                                                                 </thead>
+                                                                                 <tbody>
+                                                                                     
+                                                                                     
+                                                                                 </tbody>
+                                                                             </table>
+                                                                         </div>
+                                                                     </div>
+                                                                     <!--
+                                                                      <button class="btn btn-xs btn-theme02" style="float: right" id="showFormCreateBucket" data-toggle="modal" data-target="#createBucketModal">
+                                                                        Nueva Carpeta
+                                                                      </button>
+                         
+                                                                      -->
+                                                                    </div>
+                                                                   
+                                                                  </div>
+                                                                </div>
+                                                                
+                                                                            
+                                                              </div>
+                                                            </div>
+                                                            
+                                    
+                                                       
+                                                        <div class="row">
+                                                            <div class="col-sm-4">
+                                                                
+                                                                    </div>
+                                                            <div class="col-sm-4">
+                                                                </div>
+                                                            <div class="col-sm-4">
+                                                                
+                         
+                                                            </div>
+                                                        </div>
+                                                     
+                                                        <br><br><br><br><br>
+                                                        <div class="row">
+                                                        
+                                                            
+                                                            <div class="col-sm-4">
+                                                               <!-- <button class="btn btn-success btn-block"  onclick="cargarProyecto();" >Activar como proyecto Principal</button>
+                                                            --></div>
+                                                        </div>
+                                                         
+                                                          </div>
+                                        </div>
+                                    </div>
+								</div>
+								<div class="tab-pane" id="roles">
+
+                                    <form role ="form" >
+										<div class="form-group">
+											<label for="date_form" >NOMBRE</label>
+											<input type="text" id="nombre_rol_rol" class="form-control">
+											
+											
+										</div> 
+
+										<button class="btn btn-primary waves-effect waves-light w-md" onclick="addRol();">CREAR</button>
+									</form>
+								<p></p><p></p>
+                                <div class="card card-dashboard-map-one">
+                                    <label class="main-content-label">Roles</label>
+                                  
+                                    <div class="">
+                                                 <div >
+                                                        <div class="container-fluid fill">
+                                                          <div class="row fill">
+                                                            <div class="col-sm-12 fill">
+                                                              <div class="panel panel-default fill">
+                                                                <div class="panel-heading" data-toggle="tooltip">
+                                                                  Roles
+                                                                  <span id="refreshBuckets" class="glyphicon glyphicon-refresh" style="cursor: pointer"></span>
+                                                                  <div class="card-body">
+                                                                     <div class="table-responsive">
+                                                                         <table class="table mg-b-0 text-md-nowrap" id="roles_lista">
+                                                                             <thead>
+                                                                                 <tr>
+                                                                                     
+                                                                                     <th>Nombre</th>
+                                                                               
+                                                                                     <th>Accción</th>
+                                                                                 </tr>
+                                                                             </thead>
+                                                                             <tbody>
+                                                                                 
+                                                                                 
+                                                                             </tbody>
+                                                                         </table>
+                                                                     </div>
+                                                                 </div>
+                                                                 <!--
+                                                                  <button class="btn btn-xs btn-theme02" style="float: right" id="showFormCreateBucket" data-toggle="modal" data-target="#createBucketModal">
+                                                                    Nueva Carpeta
+                                                                  </button>
+                     
+                                                                  -->
+                                                                </div>
+                                                               
+                                                              </div>
+                                                            </div>
+                                                            
+                                                                        
+                                                          </div>
+                                                        </div>
+                                                        
+                                
+                                                   
+                                                    <div class="row">
+                                                        <div class="col-sm-4">
+                                                            
+                                                                </div>
+                                                        <div class="col-sm-4">
+                                                            </div>
+                                                        <div class="col-sm-4">
+                                                            
+                     
+                                                        </div>
+                                                    </div>
+                                                 
+                                                    <br><br><br><br><br>
+                                                    <div class="row">
+                                                    
+                                                        
+                                                        <div class="col-sm-4">
+                                                           <!-- <button class="btn btn-success btn-block"  onclick="cargarProyecto();" >Activar como proyecto Principal</button>
+                                                        --></div>
+                                                    </div>
+                                                     
+                                                      </div>
+                                    </div>
+                             </div>
+								</div>
+
+							</div>
+						</div>
+ 					</div>
+ 				</div>
+				
+				
+				 <!-- row opened -->
+		
+					<!-- /row -->
+				</div>
+				<!-- /Container -->
+			</div>
+			<!-- /main-content -->
+
+			<!-- Sidebar-right-->
+			<div class="sidebar sidebar-right sidebar-animate">
+				<div class="panel panel-primary card mb-0 box-shadow">
+					<div class="tab-menu-heading border-0 p-3">
+						<div class="card-title mb-0">Menu Visualizador</div>
+						<div class="card-options ml-auto">
+							<a href="#" class="sidebar-remove"><i class="fe fe-x"></i></a>
+						</div>
+					</div>
+					<div class="panel-body tabs-menu-body latest-tasks p-0 border-0">
+						<div class="tabs-menu ">
+							<!-- Tabs -->
+							<ul class="nav panel-tabs">
+								<li class=""><a href="#side1" class="active" data-toggle="tab"><i class="fa fa-align-right"></i> Filtros</a></li>
+								<li><a href="#side2" data-toggle="tab"><i class="fa fa-th"></i>Cubicación</a></li>
+								<li><a href="#side3" data-toggle="tab"><i class="fas fa-chart-line"></i> Herramientas & Estadísticas</a></li>
+							</ul>
+						</div>
+						<div class="tab-content">
+							<div class="tab-pane active " id="side1">
+								<div class="list d-flex align-items-center border-bottom p-3">
+									<div class="">
+										<span class="avatar bg-primary brround avatar-md">AEC</span>
+									</div>
+									<a class="wrapper w-100 ml-3" href="#" >
+										<p class="mb-0 d-flex ">
+											<b>AEC PARTICION HA</b>
+										</p>
+										<div class="d-flex justify-content-between align-items-center">
+											<div class="d-flex align-items-center">
+												<i class="fa fa-cube"></i>
+												<small class="text-muted ml-auto">Descripción del Filtro</small>
+												<p class="mb-0"></p>
+											</div>
+										</div>
+									</a>
+								</div>
+								<div class="list d-flex align-items-center border-bottom p-3">
+									<div class="">
+										<span class="avatar bg-primary brround avatar-md">AEC</span>
+									</div>
+									<a class="wrapper w-100 ml-3" href="#" >
+										<p class="mb-0 d-flex ">
+											<b>AEC PARTICION HA</b>
+										</p>
+										<div class="d-flex justify-content-between align-items-center">
+											<div class="d-flex align-items-center">
+												<i class="fa fa-cube"></i>
+												<small class="text-muted ml-auto">Descripción del Filtro</small>
+												<p class="mb-0"></p>
+											</div>
+										</div>
+									</a>
+								</div>
+								<div class="list d-flex align-items-center border-bottom p-3">
+									<div class="">
+										<span class="avatar bg-primary brround avatar-md">AEC</span>
+									</div>
+									<a class="wrapper w-100 ml-3" href="#" >
+										<p class="mb-0 d-flex ">
+											<b>AEC PARTICION HA</b>
+										</p>
+										<div class="d-flex justify-content-between align-items-center">
+											<div class="d-flex align-items-center">
+												<i class="fa fa-cube"></i>
+												<small class="text-muted ml-auto">Descripción del Filtro</small>
+												<p class="mb-0"></p>
+											</div>
+										</div>
+									</a>
+								</div>
+								<div class="list d-flex align-items-center border-bottom p-3">
+									<div class="">
+										<span class="avatar bg-primary brround avatar-md">AEC</span>
+									</div>
+									<a class="wrapper w-100 ml-3" href="#" >
+										<p class="mb-0 d-flex ">
+											<b>AEC PARTICION HA</b>
+										</p>
+										<div class="d-flex justify-content-between align-items-center">
+											<div class="d-flex align-items-center">
+												<i class="fa fa-cube"></i>
+												<small class="text-muted ml-auto">Descripción del Filtro</small>
+												<p class="mb-0"></p>
+											</div>
+										</div>
+									</a>
+								</div>
+							</div>
+							<div class="tab-pane  " id="side2">
+								<div class="list-group list-group-flush ">
+									<div class="list-group-item d-flex  align-items-center">
+										<div class="mr-3">
+											<div class="">
+										<span class="avatar bg-primary brround avatar-md">CAT</span>
+									</div>
+										</div>
+										<div>
+											<strong>Cubicar Categoria</strong> 
+											<div class="small text-muted">
+											Descripción Herramienta
+											</div>
+										</div>
+									</div>
+								
+								</div>
+								<div class="list-group list-group-flush ">
+									<div class="list-group-item d-flex  align-items-center">
+										<div class="mr-3">
+											<div class="">
+										<span class="avatar bg-primary brround avatar-md">CAT</span>
+									</div>
+										</div>
+										<div>
+											<strong>Cubicar Categoria</strong> 
+											<div class="small text-muted">
+											Descripción Herramienta
+											</div>
+										</div>
+									</div>
+								
+								</div>
+								<div class="list-group list-group-flush ">
+									<div class="list-group-item d-flex  align-items-center">
+										<div class="mr-3">
+											<div class="">
+										<span class="avatar bg-primary brround avatar-md">CAT</span>
+									</div>
+										</div>
+										<div>
+											<strong>Cubicar Categoria</strong> <P>
+											<div class="small text-muted">
+											Descripción Herramienta
+											</div>
+										</div>
+									</div>
+								
+								</div>
+								<div class="list-group list-group-flush ">
+									<div class="list-group-item d-flex  align-items-center">
+										<div class="mr-3">
+											<div class="">
+										<span class="avatar bg-primary brround avatar-md">CAT</span>
+									</div>
+										</div>
+										<div>
+											<strong>Cubicar Categoria</strong> 
+											<div class="small text-muted">
+											Descripción Herramienta
+											</div>
+										</div>
+									</div>
+								
+								</div>
+							</div>
+							<div class="tab-pane  " id="side3">
+								<div class="list-group list-group-flush ">
+									<div class="list-group-item d-flex  align-items-center">
+										<div class="mr-2">
+											<span class="avatar bg-primary brround avatar-md">A</span></span>
+										</div>
+										<div class="">
+											<div class="font-weight-semibold" >Estadística 01</div>
+										</div>
+										
+									</div>
+									<div class="list-group-item d-flex  align-items-center">
+										<div class="mr-2">
+											<span class="avatar bg-primary brround avatar-md">A</span></span>
+										</div>
+										<div class="">
+											<div class="font-weight-semibold" >Estadística 01</div>
+										</div>
+										
+									</div>
+									<div class="list-group-item d-flex  align-items-center">
+										<div class="mr-2">
+											<span class="avatar bg-primary brround avatar-md">A</span></span>
+										</div>
+										<div class="">
+											<div class="font-weight-semibold" >Estadística 01</div>
+										</div>
+										
+									</div>
+									<div class="list-group-item d-flex  align-items-center">
+										<div class="mr-2">
+											<span class="avatar bg-primary brround avatar-md">A</span></span>
+										</div>
+										<div class="">
+											<div class="font-weight-semibold" >Estadística 01</div>
+										</div>
+										
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--/Sidebar-right-->
+
+			<!-- Message Modal -->
+		
+
+			<!--Video Modal -->
+		
+			<!-- Audio Modal -->
+		
+
+			<!-- Footer opened -->
+			<div class="main-footer ht-40">
+				<div class="container-fluid pd-t-0-f ht-100p">
+					<span>Copyright © 2021 <a href="#">ARBIM CONSTRUCCIÓN</a>.</span>
+				</div>
+			</div>
+			<!-- Footer closed -->
+
+		</div>
+		<!-- End Page -->
+
+		<!-- Back-to-top -->
+		<a href="#top" id="back-to-top"><i class="las la-angle-double-up"></i></a>
+
+		<!-- JQuery min js -->
+		<!--<script src="assets/plugins/jquery/jquery.min.js"></script> -->
+
+		
+		<script src="assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+		<!--Internal  Chart.bundle js -->
+		<script src="assets/plugins/chart.js/Chart.bundle.min.js"></script>
+
+		<!-- Ionicons js -->
+		<script src="assets/plugins/ionicons/ionicons.js"></script>
+
+		<!-- Moment js -->
+		<script src="assets/plugins/moment/moment.js"></script>
+
+		<!--Internal Sparkline js -->
+		<script src="assets/plugins/jquery-sparkline/jquery.sparkline.min.js"></script>
+
+		<!-- Moment js -->
+		<script src="assets/plugins/raphael/raphael.min.js"></script>
+
+		<!--Internal  Flot js-->
+		<script src="assets/plugins/jquery.flot/jquery.flot.js"></script>
+		<script src="assets/plugins/jquery.flot/jquery.flot.pie.js"></script>
+		<script src="assets/plugins/jquery.flot/jquery.flot.resize.js"></script>
+		<script src="assets/plugins/jquery.flot/jquery.flot.categories.js"></script>
+		<script src="assets/js/dashboard.sampledata.js"></script>
+		<script src="assets/js/chart.flot.sampledata.js"></script>
+
+		<!--Internal Apexchart js-->
+		
+
+		<!-- Rating js-->
+		<script src="assets/plugins/rating/jquery.rating-stars.js"></script>
+		<script src="assets/plugins/rating/jquery.barrating.js"></script>
+
+		<!--Internal  Perfect-scrollbar js -->
+		<script src="assets/plugins/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+		<script src="assets/plugins/perfect-scrollbar/p-scroll.js"></script>
+
+		<!-- Eva-icons js -->
+		<script src="assets/js/eva-icons.min.js"></script>
+
+		<!-- right-sidebar js -->
+		<script src="assets/plugins/sidebar/sidebar.js"></script>
+		<script src="assets/plugins/sidebar/sidebar-custom.js"></script>
+
+		<!-- Sticky js -->
+		<script src="assets/js/sticky.js"></script>
+		<script src="assets/js/modal-popup.js"></script>
+
+		<!-- Left-menu js-->
+		<script src="assets/plugins/side-menu/sidemenu.js"></script>
+
+		<!-- Internal Map -->
+		<script src="assets/plugins/jqvmap/jquery.vmap.min.js"></script>
+		<script src="assets/plugins/jqvmap/maps/jquery.vmap.usa.js"></script>
+
+		<!--Internal  index js -->
+		<script src="assets/js/index.js"></script>
+
+		<!-- custom js -->
+		<script src="assets/js/custom.js"></script>
+		<script src="assets/js/jquery.vmap.sampledata.js"></script>
+
+	
+	
+	    <script src="/js/handleselectionextension.js"></script>
+	    <script src="js/frappe-gantt.min.js"></script>
+	   
+	  <!--  <script src="js/atbimDocking.js"></script>-->
+	  <script>
+////*********ADD USUARIO ROL*************************************************///////////
+function addUsuarioRol(){
+
+
+			var nombre_rol      = $("#nombre_rol").val();
+			var apellido_rol = $("#apellido_rol").val();
+			var e_mail_rol = $("#e_mail_rol").val();
+			var rol_rol = $( "#rol_rol option:selected" ).text();
+			var telefono_rol = $("#telefono_rol").val(); 
+			var id = Math.random()*100;
+
+
+			jQuery.post({
+				url: '/inserRolUsuario',
+				contentType: 'application/json',
+				data:  JSON.stringify({ 'id': ''+id+'','nombre':''+nombre_rol+'', 'apellido': ''+apellido_rol+'','email': ''+e_mail_rol+'','rol': ''+rol_rol+'' ,'telefono': ''+telefono_rol+''}),
+				success: function (res) {
+				alert("ok");
+					console.log("ENVIO OK");
+                    console.log(res);
+				//	alert();
+				//	window.location = window.location;
+				
+			},error:function(e){
+				alert("s");
+				console.log("error envio");
+				console.log(e);
+			}
+			});
+
+		}
+////**********************************************************///////////
+/////*************VISUALIZAR OBJETO***************////////////////////////
+
+function visualizarObj(idObjetos){
+	let d = ""+idObjetos;
+	var arr = d.split(",");
+	var ids = [];
+	for(var a = 0; a<arr.length;a++){
+		ids.push(parseInt(arr[a]));
+	}
+	viewer.isolate(ids);
+	viewer.fitToView(ids, viewer.model);
+}
+
+
+
+/////****************GET usuario rol******************************
+
+getRol();
+function getRol(){
+				jQuery.get({
+					url: '/listaRol',
+					contentType: 'application/json',
+					
+					success: function (res) {
+					var cont = 1;
+					console.log("resultado");
+				console.log(res);
+					for(var i=0;i<res.length;i++){
+						cont = i+1;
+						console.log( res[i].id);
+						$('#roles_lista > tbody:last-child').append('<tr><td>'+res[i].nombre+'</td><td><button class=\'btn btn-primary btn-block\'  onclick=\'deleteRol('+res[i].id+')\'>ELIMINAR</button></td></tr>');
+                        $('#rol_rol').append('<option value=\"'+res[i].nombre+'\">'+res[i].nombre+'</option>');
+                    
+                    }
+					
+
+					
+				},error:function(e){
+					console.log("error envio");
+					console.log(e);
+				}
+				});
+		}
+
+////**********************************************************///////////
+getUsuarioRol();
+		function getUsuarioRol(){
+				jQuery.get({
+					url: '/listaUsuarioRol',
+					contentType: 'application/json',
+					
+					success: function (res) {
+					var cont = 1;
+					console.log("resultado");
+				console.log(res);
+					for(var i=0;i<res.length;i++){
+						cont = i+1;
+						console.log( res[i].id);
+						$('#usuario_rol > tbody:last-child').append('<tr><td>'+res[i].nombre+'</td><td>'+res[i].apellido+'</td><td>'+res[i].email+'</td><td>'+res[i].telefono+'</td><td>'+res[i].rol+'</td><td><button class=\'btn btn-primary btn-block\'  onclick=\'deleteUsuarioRol('+res[i].id+')\'>ELIMINAR</button></td></tr>');
+					}
+					
+
+					
+				},error:function(e){
+					console.log("error envio");
+					console.log(e);
+				}
+				});
+		}
+
+		function deleteUsuarioRol(id){
+			jQuery.post({
+				url: '/deleteUsuarioRol',
+				contentType: 'application/json',
+				data:  JSON.stringify({ 'id': ''+id+'' }),
+
+				success: function (res) {
+				
+				console.log("RESULTADO Get server");
+				console.log(res);
+				console.log(typeof res);
+				console.log(res.length);
+				console.log(typeof res[0]);
+				// $('#vistas_previas').innerHTML = "";
+				console.log("RESULTADO Get PLAN SERVER");
+				location.reload();
+				
+			},error:function(e){
+				console.log("error envio");
+				console.log(e);
+			}
+			});
+		}
+
+		//////////***********DELETE TAREA OBJETO************///////////////
+
+		function deleteRol(id){
+			jQuery.post({
+				url: '/deleteRol',
+				contentType: 'application/json',
+				data:  JSON.stringify({ 'id': ''+id+'' }),
+
+				success: function (res) {
+				
+				console.log("RESULTADO Get server");
+				console.log(res);
+				console.log(typeof res);
+				console.log(res.length);
+				console.log(typeof res[0]);
+				// $('#vistas_previas').innerHTML = "";
+				console.log("RESULTADO Get PLAN SERVER");
+				location.reload();
+				
+			},error:function(e){
+				console.log("error envio");
+				console.log(e);
+			}
+			});
+		}
+
+
+		////////////////////////////////////////
+			
+		function addRol(){
+			var nombre_rol  = $("#nombre_rol_rol").val();
+			 
+			var id = Math.random()*100;
+
+			jQuery.post({
+				url: '/insertRol',
+				contentType: 'application/json',
+				data:  JSON.stringify({ 'id': ''+id+'','nombre':''+nombre_rol+''}),
+				success: function (res) {
+				
+					console.log("ENVIO OK");
+					alert("ok");
+				//	window.location = window.location;
+				
+			},error:function(e){
+			//	alert("s");
+				console.log("error envio");
+				console.log(e);
+			}
+			});
+
+		}
+	</script>
+	</body>
+</html>
